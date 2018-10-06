@@ -1,0 +1,3 @@
+Comando ejecutado para generar los mutantes:
+
+java -jar MDroidPlus-1.0.0.jar ../lib/ /Users/farruza/Documents/MISO/PRUEBAS/taller08/gnucash-android/ org.gnucash.android ./tmp/mutants/ ./ false

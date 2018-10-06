@@ -1,0 +1,6 @@
+Se utilizó como guía para la configuración de STRYKER el ejemplo de la página oficial de la herramienta, ir a http://stryker-mutator.io/example
+
+Secuencia de commandos de ejecución:
+1.) npm install
+2.) npm test
+3.) npm run stryker

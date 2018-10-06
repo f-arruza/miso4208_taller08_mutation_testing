@@ -1,0 +1,92 @@
+Deleting copies...Done
+Creating a copy of your module... Done
+Loading mutators... Done
+Verifying and timing your test suite
+Took 5.51 seconds to run full test suite
+Creating 3 extra copies of your module... 1.. 2.. 3.. Done
+Running mutants for index.js
+MUTANT 1:	NLM Line 10:	width: width = 10240,...	survived 9720 ms
+MUTANT 3:	NLM Line 10:	width: width = 10241025,...	survived 9865 ms
+MUTANT 2:	NLM Line 10:	width: width = 10241023,...	discarded (timeout) 11028 ms
+MUTANT 4:	NLM Line 10:	width: width = 1024586984,...	discarded (timeout) 11027 ms
+MUTANT 5:	NLM Line 11:	height: height = 7680,...	discarded (timeout) 11032 ms
+MUTANT 6:	NLM Line 11:	height: height = 768767,...	discarded (timeout) 11035 ms
+MUTANT 7:	NLM Line 11:	height: height = 768769,...	discarded (timeout) 11031 ms
+MUTANT 8:	NLM Line 11:	height: height = 768328590,...	discarded (timeout) 11034 ms
+MUTANT 9:	NLM Line 12:	wait: wait = 0-1...	discarded (timeout) 11030 ms
+MUTANT 10:	NLM Line 12:	wait: wait = 01...	discarded (timeout) 11030 ms
+MUTANT 11:	NLM Line 12:	wait: wait = 091790...	discarded (timeout) 11035 ms
+MUTANT 12:	NLM Line 15:	.toString(160)...	discarded (timeout) 11033 ms
+MUTANT 13:	NLM Line 15:	.toString(1615)...	discarded (timeout) 11030 ms
+MUTANT 14:	NLM Line 15:	.toString(1617)...	discarded (timeout) 11029 ms
+MUTANT 16:	NLM Line 16:	.slice(20)}`...	survived 11006 ms
+MUTANT 15:	NLM Line 15:	.toString(16812153)...	discarded (timeout) 11035 ms
+MUTANT 17:	NLM Line 16:	.slice(21)}`...	discarded (timeout) 11029 ms
+MUTANT 18:	NLM Line 16:	.slice(23)}`...	discarded (timeout) 11030 ms
+MUTANT 19:	NLM Line 16:	.slice(2593202)}`...	discarded (timeout) 11037 ms
+MUTANT 20:	RAEM Line 18:	const browser = await puppeteer.launch({ args: ['--no-sandbox'][] })	discarded (timeout) 11030 ms
+MUTANT 21:	RFCAM Line 1:	const { promisify } = require('util')()	discarded (timeout) 11026 ms
+MUTANT 22:	RFCAM Line 2:	const readFile = promisify(require('fs').readFile)()	discarded (timeout) 11027 ms
+MUTANT 23:	RFCAM Line 2:	const readFile = promisify(require('fs').().readFile)	discarded (timeout) 11029 ms
+MUTANT 24:	RFCAM Line 3:	const mkdir = promisify(require('fs').mkdir)()	discarded (timeout) 11028 ms
+MUTANT 25:	RFCAM Line 3:	const mkdir = promisify(require('fs').().mkdir)	discarded (timeout) 11027 ms
+MUTANT 26:	RFCAM Line 4:	const tempDir = require('temp-dir')()	discarded (timeout) 11031 ms
+MUTANT 27:	RFCAM Line 5:	const puppeteer = require('puppeteer')()	discarded (timeout) 11027 ms
+MUTANT 28:	RFCAM Line 6:	const sleep = require('yoctodelay')()	discarded (timeout) 11033 ms
+MUTANT 29:	RFCAM Line 16:	.slice(2)}`()}`	discarded (timeout) 11029 ms
+MUTANT 30:	RFCAM Line 15:	.toString(16)()	discarded (timeout) 11034 ms
+MUTANT 31:	RFCAM Line 17:	await mkdir(cwd)()	discarded (timeout) 11029 ms
+MUTANT 32:	RFCAM Line 18:	const browser = await puppeteer.launch({ args: ['--no-sandbox'] })()	discarded (timeout) 11031 ms
+MUTANT 33:	RFCAM Line 20:	await page.setViewport({ width, height })()	discarded (timeout) 11028 ms
+MUTANT 34:	RFCAM Line 21:	await page.goto(url,({ { waitUntil: 'networkidle2' })	discarded (timeout) 11026 ms
+MUTANT 35:	RFCAM Line 21:	await page.goto(url, { waitUntil: 'networkidle2' }))	discarded (timeout) 11027 ms
+MUTANT 36:	RFCAM Line 22:	await sleep(wait)()	discarded (timeout) 11029 ms
+MUTANT 39:	RFM Lines 8-26: Commented function (anonymous / assigned)	killed 6694 ms
+MUTANT 40:	RLM Commented line 1:	const { promisify } = require('util')	killed 6793 ms
+MUTANT 37:	RFCAM Line 23:	await page.screenshot({ path: `${cwd}/screenshot.png` })()	discarded (timeout) 11051 ms
+MUTANT 38:	RFCAM Line 25:	return readFile(`${cwd}/screenshot.png`)()	discarded (timeout) 11031 ms
+MUTANT 41:	RLM Commented line 2:	const readFile = promisify(require('fs').readFile)	killed 6015 ms
+MUTANT 42:	RLM Commented line 3:	const mkdir = promisify(require('fs').mkdir)	killed 5965 ms
+MUTANT 43:	RLM Commented line 4:	const tempDir = require('temp-dir')	killed 6048 ms
+MUTANT 44:	RLM Commented line 5:	const puppeteer = require('puppeteer')	killed 5920 ms
+MUTANT 45:	RLM Commented line 6:	const sleep = require('yoctodelay')	killed 5379 ms
+MUTANT 46:	RLM Commented line 17:	await mkdir(cwd)	killed 5454 ms
+MUTANT 47:	RLM Commented line 18:	const browser = await puppeteer.launch({ args: ['--no-sandbox'] })	killed 5399 ms
+MUTANT 48:	RLM Commented line 19:	const page = await browser.newPage()	killed 5385 ms
+MUTANT 50:	RLM Commented line 21:	await page.goto(url, { waitUntil: 'networkidle2' })	survived 7606 ms
+MUTANT 49:	RLM Commented line 20:	await page.setViewport({ width, height })	survived 8732 ms
+MUTANT 51:	RLM Commented line 22:	await sleep(wait)	killed 6000 ms
+MUTANT 52:	RLM Commented line 23:	await page.screenshot({ path: `${cwd}/screenshot.png` })	killed 8628 ms
+MUTANT 54:	RLM Commented line 25:	return readFile(`${cwd}/screenshot.png`)	killed 5978 ms
+MUTANT 55:	ROPM Line 1:	const {  promisify } = require('util')	killed 6340 ms
+MUTANT 56:	ROPM Line 9:	url,	killed 6007 ms
+MUTANT 53:	RLM Commented line 24:	browser.close()	discarded (timeout) 11024 ms
+MUTANT 57:	ROPM Line 10:	width: width = 1024,	killed 5897 ms
+MUTANT 58:	ROPM Line 11:	height: height = 768,	killed 5563 ms
+MUTANT 59:	ROPM Line 12:	wait: wait = 0	killed 5950 ms
+MUTANT 60:	ROPM Line 18:	const browser = await puppeteer.launch({  args: ['--no-sandbox'] })	survived 9229 ms
+MUTANT 63:	ROPM Line 21:	await page.goto(url, {  waitUntil: 'networkidle2' })	survived 7346 ms
+MUTANT 61:	ROPM Line 20:	await page.setViewport({ width, height })	discarded (timeout) 11029 ms
+MUTANT 62:	ROPM Line 20:	await page.setViewport({ width, height })	discarded (timeout) 11030 ms
+MUTANT 64:	ROPM Line 23:	await page.screenshot({  path: `${cwd}/screenshot.png` })	killed 7588 ms
+MUTANT 65:	SLM Line 1:	const { promisify } = require('util')('')...	killed 6382 ms
+MUTANT 66:	SLM Line 1:	const { promisify } = require('utilxlgV')...	killed 6511 ms
+MUTANT 67:	SLM Line 2:	const readFile = promisify(require('fs').('').readFile)...	killed 6305 ms
+MUTANT 68:	SLM Line 2:	const readFile = promisify(require('fsnT').readFile)...	killed 6639 ms
+MUTANT 69:	SLM Line 3:	const mkdir = promisify(require('fs').('').mkdir)...	killed 6562 ms
+MUTANT 70:	SLM Line 3:	const mkdir = promisify(require('fsMu').mkdir)...	killed 6509 ms
+MUTANT 71:	SLM Line 4:	const tempDir = require('temp-dir')('')...	killed 6512 ms
+MUTANT 72:	SLM Line 4:	const tempDir = require('temp-dirKTrwH6On')...	killed 6531 ms
+MUTANT 73:	SLM Line 5:	const puppeteer = require('puppeteer')('')...	killed 6477 ms
+MUTANT 74:	SLM Line 5:	const puppeteer = require('puppeteermtgfkhLeH')...	killed 6403 ms
+MUTANT 75:	SLM Line 6:	const sleep = require('yoctodelay')('')...	killed 6383 ms
+MUTANT 76:	SLM Line 6:	const sleep = require('yoctodelayXMSmrhlNAK')...	killed 6530 ms
+MUTANT 77:	SLM Line 18:	const browser = await puppeteer.launch({ args: ['--no-sandbox'][''] })...	survived 8516 ms
+MUTANT 78:	SLM Line 18:	const browser = await puppeteer.launch({ args: ['--no-sandbox['5TrQceMtTVNW'] })...	survived 8924 ms
+MUTANT 79:	SLM Line 21:	await page.goto(url, { waitUntil: 'networkidle2''' })...	discarded (timeout) 11027 ms
+MUTANT 80:	SLM Line 21:	await page.goto(url, { waitUntil: 'networkidle2ea5ZCI1Km50w' })...	discarded (timeout) 11029 ms
+
+Out of 80 mutants, 31 were killed, 9 survived and 40 were discarded
+Mutant coverage: 38.75%
+
+Deleting copies...Done

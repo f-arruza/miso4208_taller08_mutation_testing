@@ -1,0 +1,4 @@
+Para el ejercicio se seleccionó el módulo "capture-chrome" que permite hacer capturas de pantallas utilizando Chrome en modo headless.
+
+Repositorio: https://github.com/juliangruber/capture-chrome.git
+NPM: https://www.npmjs.com/package/capture-chrome

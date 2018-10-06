@@ -1,0 +1,80 @@
+MUTANT 1:	NLM index.js Line 10:	`width: width = 1024,` > `width: width = 0,'`
+MUTANT 2:	NLM index.js Line 10:	`width: width = 1024,` > `width: width = 1023,'`
+MUTANT 3:	NLM index.js Line 10:	`width: width = 1024,` > `width: width = 1025,'`
+MUTANT 4:	NLM index.js Line 10:	`width: width = 1024,` > `width: width = 586984,'`
+MUTANT 5:	NLM index.js Line 11:	`height: height = 768,` > `height: height = 0,'`
+MUTANT 6:	NLM index.js Line 11:	`height: height = 768,` > `height: height = 767,'`
+MUTANT 7:	NLM index.js Line 11:	`height: height = 768,` > `height: height = 769,'`
+MUTANT 8:	NLM index.js Line 11:	`height: height = 768,` > `height: height = 328590,'`
+MUTANT 9:	NLM index.js Line 12:	`wait: wait = 0` > `wait: wait = -1'`
+MUTANT 10:	NLM index.js Line 12:	`wait: wait = 0` > `wait: wait = 1'`
+MUTANT 11:	NLM index.js Line 12:	`wait: wait = 0` > `wait: wait = 91790'`
+MUTANT 12:	NLM index.js Line 15:	`.toString(16)` > `.toString(0)'`
+MUTANT 13:	NLM index.js Line 15:	`.toString(16)` > `.toString(15)'`
+MUTANT 14:	NLM index.js Line 15:	`.toString(16)` > `.toString(17)'`
+MUTANT 15:	NLM index.js Line 15:	`.toString(16)` > `.toString(812153)'`
+MUTANT 16:	NLM index.js Line 16:	`.slice(2)}`` > `.slice(0)}`'`
+MUTANT 17:	NLM index.js Line 16:	`.slice(2)}`` > `.slice(1)}`'`
+MUTANT 18:	NLM index.js Line 16:	`.slice(2)}`` > `.slice(3)}`'`
+MUTANT 19:	NLM index.js Line 16:	`.slice(2)}`` > `.slice(593202)}`'`
+MUTANT 20:	RAEM index.js Line 18:	`const browser = await puppeteer.launch({ args: ['--no-sandbox'] })` > `const browser = await puppeteer.launch({ args: [] })'`
+MUTANT 21:	RFCAM index.js Line 1:	`const { promisify } = require('util')` > `const { promisify } = require()'`
+MUTANT 22:	RFCAM index.js Line 2:	`const readFile = promisify(require('fs').readFile)` > `const readFile = promisify()'`
+MUTANT 23:	RFCAM index.js Line 2:	`const readFile = promisify(require('fs').readFile)` > `const readFile = promisify(require().readFile)'`
+MUTANT 24:	RFCAM index.js Line 3:	`const mkdir = promisify(require('fs').mkdir)` > `const mkdir = promisify()'`
+MUTANT 25:	RFCAM index.js Line 3:	`const mkdir = promisify(require('fs').mkdir)` > `const mkdir = promisify(require().mkdir)'`
+MUTANT 26:	RFCAM index.js Line 4:	`const tempDir = require('temp-dir')` > `const tempDir = require()'`
+MUTANT 27:	RFCAM index.js Line 5:	`const puppeteer = require('puppeteer')` > `const puppeteer = require()'`
+MUTANT 28:	RFCAM index.js Line 6:	`const sleep = require('yoctodelay')` > `const sleep = require()'`
+MUTANT 29:	RFCAM index.js Line 16:	`.slice(2)}`` > `.slice()}`'`
+MUTANT 30:	RFCAM index.js Line 15:	`.toString(16)` > `.toString()'`
+MUTANT 31:	RFCAM index.js Line 17:	`await mkdir(cwd)` > `await mkdir()'`
+MUTANT 32:	RFCAM index.js Line 18:	`const browser = await puppeteer.launch({ args: ['--no-sandbox'] })` > `const browser = await puppeteer.launch()'`
+MUTANT 33:	RFCAM index.js Line 20:	`await page.setViewport({ width, height })` > `await page.setViewport()'`
+MUTANT 34:	RFCAM index.js Line 21:	`await page.goto(url, { waitUntil: 'networkidle2' })` > `await page.goto({ waitUntil: 'networkidle2' })'`
+MUTANT 35:	RFCAM index.js Line 21:	`await page.goto(url, { waitUntil: 'networkidle2' })` > `await page.goto(url)'`
+MUTANT 36:	RFCAM index.js Line 22:	`await sleep(wait)` > `await sleep()'`
+MUTANT 37:	RFCAM index.js Line 23:	`await page.screenshot({ path: `${cwd}/screenshot.png` })` > `await page.screenshot()'`
+MUTANT 38:	RFCAM index.js Line 25:	`return readFile(`${cwd}/screenshot.png`)` > `return readFile()'`
+MUTANT 39:	RFM Lines 8-26: Commented function (anonymous / assigned)
+MUTANT 40:	RLM Commented line 1:	const { promisify } = require('util')
+MUTANT 41:	RLM Commented line 2:	const readFile = promisify(require('fs').readFile)
+MUTANT 42:	RLM Commented line 3:	const mkdir = promisify(require('fs').mkdir)
+MUTANT 43:	RLM Commented line 4:	const tempDir = require('temp-dir')
+MUTANT 44:	RLM Commented line 5:	const puppeteer = require('puppeteer')
+MUTANT 45:	RLM Commented line 6:	const sleep = require('yoctodelay')
+MUTANT 46:	RLM Commented line 17:	await mkdir(cwd)
+MUTANT 47:	RLM Commented line 18:	const browser = await puppeteer.launch({ args: ['--no-sandbox'] })
+MUTANT 48:	RLM Commented line 19:	const page = await browser.newPage()
+MUTANT 49:	RLM Commented line 20:	await page.setViewport({ width, height })
+MUTANT 50:	RLM Commented line 21:	await page.goto(url, { waitUntil: 'networkidle2' })
+MUTANT 51:	RLM Commented line 22:	await sleep(wait)
+MUTANT 52:	RLM Commented line 23:	await page.screenshot({ path: `${cwd}/screenshot.png` })
+MUTANT 53:	RLM Commented line 24:	browser.close()
+MUTANT 54:	RLM Commented line 25:	return readFile(`${cwd}/screenshot.png`)
+MUTANT 55:	ROPM index.js Line 1:	`const { promisify } = require('util')` > `const {  } = require('util')'`
+MUTANT 56:	ROPM index.js Line 9:	`url,` > `'`
+MUTANT 57:	ROPM index.js Line 10:	`width: width = 1024,` > `'`
+MUTANT 58:	ROPM index.js Line 11:	`height: height = 768,` > `'`
+MUTANT 59:	ROPM index.js Line 12:	`wait: wait = 0` > `'`
+MUTANT 60:	ROPM index.js Line 18:	`const browser = await puppeteer.launch({ args: ['--no-sandbox'] })` > `const browser = await puppeteer.launch({  })'`
+MUTANT 61:	ROPM index.js Line 20:	`await page.setViewport({ width, height })` > `await page.setViewport({ height })'`
+MUTANT 62:	ROPM index.js Line 20:	`await page.setViewport({ width, height })` > `await page.setViewport({ width })'`
+MUTANT 63:	ROPM index.js Line 21:	`await page.goto(url, { waitUntil: 'networkidle2' })` > `await page.goto(url, {  })'`
+MUTANT 64:	ROPM index.js Line 23:	`await page.screenshot({ path: `${cwd}/screenshot.png` })` > `await page.screenshot({  })'`
+MUTANT 65:	SLM index.js Line 1:	`const { promisify } = require('util')` > `const { promisify } = require('')'`
+MUTANT 66:	SLM index.js Line 1:	`const { promisify } = require('util')` > `const { promisify } = require('xlgV')'`
+MUTANT 67:	SLM index.js Line 2:	`const readFile = promisify(require('fs').readFile)` > `const readFile = promisify(require('').readFile)'`
+MUTANT 68:	SLM index.js Line 2:	`const readFile = promisify(require('fs').readFile)` > `const readFile = promisify(require('nT').readFile)'`
+MUTANT 69:	SLM index.js Line 3:	`const mkdir = promisify(require('fs').mkdir)` > `const mkdir = promisify(require('').mkdir)'`
+MUTANT 70:	SLM index.js Line 3:	`const mkdir = promisify(require('fs').mkdir)` > `const mkdir = promisify(require('Mu').mkdir)'`
+MUTANT 71:	SLM index.js Line 4:	`const tempDir = require('temp-dir')` > `const tempDir = require('')'`
+MUTANT 72:	SLM index.js Line 4:	`const tempDir = require('temp-dir')` > `const tempDir = require('KTrwH6On')'`
+MUTANT 73:	SLM index.js Line 5:	`const puppeteer = require('puppeteer')` > `const puppeteer = require('')'`
+MUTANT 74:	SLM index.js Line 5:	`const puppeteer = require('puppeteer')` > `const puppeteer = require('mtgfkhLeH')'`
+MUTANT 75:	SLM index.js Line 6:	`const sleep = require('yoctodelay')` > `const sleep = require('')'`
+MUTANT 76:	SLM index.js Line 6:	`const sleep = require('yoctodelay')` > `const sleep = require('XMSmrhlNAK')'`
+MUTANT 77:	SLM index.js Line 18:	`const browser = await puppeteer.launch({ args: ['--no-sandbox'] })` > `const browser = await puppeteer.launch({ args: [''] })'`
+MUTANT 78:	SLM index.js Line 18:	`const browser = await puppeteer.launch({ args: ['--no-sandbox'] })` > `const browser = await puppeteer.launch({ args: ['5TrQceMtTVNW'] })'`
+MUTANT 79:	SLM index.js Line 21:	`await page.goto(url, { waitUntil: 'networkidle2' })` > `await page.goto(url, { waitUntil: '' })'`
+MUTANT 80:	SLM index.js Line 21:	`await page.goto(url, { waitUntil: 'networkidle2' })` > `await page.goto(url, { waitUntil: 'ea5ZCI1Km50w' })'`
